@@ -3,9 +3,11 @@
  *
  */
 #include "stdio.h"
-int main(void)
+int main(void) /* Execution begins here */
 {
-	puts("Programming is like building a multilingual puzzle,");
-
+	/*
+	 * To print the statement and a new line.
+	 */
+	puts ("Programming is like building a multilingual puzzle");
 	return(0);
 }
