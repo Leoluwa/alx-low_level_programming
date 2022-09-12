@@ -1,19 +1,9 @@
-	.file	"6-size.c"
+	.file	"main.c"
 	.intel_syntax noprefix
 	.text
 	.section	.rodata
 .LC0:
-	.string	"Size of a char: %d byte(s)\n"
-.LC1:
-	.string	"Size of an int: %d byte(s)\n"
-	.align 8
-.LC2:
-	.string	"Size of a long int: %d byte(s)\n"
-	.align 8
-.LC3:
-	.string	"Size of a long long int: %d byte(s)\n"
-.LC4:
-	.string	"Size of a float: %d byte(s)\n"
+	.string	"Holberton School"
 	.text
 	.globl	main
 	.type	main, @function
@@ -26,24 +16,7 @@ main:
 	.cfi_offset 6, -16
 	mov	rbp, rsp
 	.cfi_def_cfa_register 6
-	mov	esi, 1
 	lea	rdi, .LC0[rip]
-	mov	eax, 0
-	call	printf@PLT
-	mov	esi, 4
-	lea	rdi, .LC1[rip]
-	mov	eax, 0
-	call	printf@PLT
-	mov	esi, 8
-	lea	rdi, .LC2[rip]
-	mov	eax, 0
-	call	printf@PLT
-	mov	esi, 8
-	lea	rdi, .LC3[rip]
-	mov	eax, 0
-	call	printf@PLT
-	mov	esi, 4
-	lea	rdi, .LC4[rip]
 	mov	eax, 0
 	call	printf@PLT
 	mov	eax, 0
