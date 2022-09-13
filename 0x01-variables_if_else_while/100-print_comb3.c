@@ -2,33 +2,34 @@
 /**
  * main - Entry point
  *
- * Return Always 0 (Success)
+ * Return: Always 0 (Success)
  */
- int main(void)
- {
-	 int c = 0;
-	 int d;
-	 int e;
+int main(void)
+{
+	int c = 0;
+	int d;
+	int e;
 
-	 while (c <= 99)
-	 {
-		 d = (c / 10 + '0');
-		 e = (c % 10 + '0');
+	while (c <= 99)
+	{
+		d = (c / 10 + '0');
+		e = (c % 10 + '0');
 
-		 if (d < e)
-		 {
-			 putchar(d);
-			 putchar(e);
-			 if (c != 89)
-			 {
-				 putchar(',');
-				 putchar(' ');
-			 }
-		 }
-		 c++;
-	 }
+		if (d < e)
+		{
+			putchar(d);
+			putchar(e);
 
-	 putchar('\n');
+			if (c != 89)
+			{
+				putchar(',');
+				putchar(' ');
+			}
+		}
+		c++;
+	}
 
-	 return (0);
- }
+	putchar('\n');
+
+	return (0);
+}
