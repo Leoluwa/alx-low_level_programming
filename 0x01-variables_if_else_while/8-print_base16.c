@@ -1,7 +1,3 @@
-/*
- * I am at peace just for the sake of it :)
- *
- */
 #include "stdio.h"
 /**
  * main - Entry point
@@ -12,13 +8,12 @@ int main(void)
 {
 	short Count;
 
-	/*
-	 * The ASCII code :
-	 *
-	 * For lowercase, a is 97, z is 122
-	 *
-	 */
-	for (Count = 122; Count >= 97; Count--)
+	for (Count = 48; Count <= 57; Count++)
+	{
+		putchar(Count);
+	}
+
+	for (Count = 97; Count <= 102; Count++)
 	{
 		putchar(Count);
 	}
