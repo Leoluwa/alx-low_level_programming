@@ -16,14 +16,12 @@ int main(void)
 {
 	short Count;
 
-	
 	/*
 	 * ASCII code :
 	 *
 	 * For lowercase, a is 97, zis 122, e is 101, q is 113
 	 *
 	 */
-
 
 	/*
 	 *
@@ -40,7 +38,7 @@ int main(void)
 	}
 
 	putchar('\n');
-
-
+	
+	
 	return (0);
 }
