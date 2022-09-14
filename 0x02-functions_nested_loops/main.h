@@ -1,6 +1,8 @@
 #ifndef	MAIN_H
 #define	MAIN_H
 
+int _abs(int);
+
 int _islower(int s);
 
 int _isalpha(int s);
