@@ -21,5 +21,19 @@ int main(void)
 	_putchar('\n');
 
 
+	l = print_last_digit(INT_MIN);
+
+	_putchar('0' + l);
+
+	_putchar('\n');
+
+	
+	/*l = print_last_digit(-2147483648 );
+
+	_putchar('0' + l);
+
+	_putchar('\n');*/
+
+
 	return (0);
 }

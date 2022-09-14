@@ -14,11 +14,6 @@ int print_last_digit(int p)
 	{
 		j = ((-1 * p) % 10);
 
-		if (j == -8)
-		{
-			j = 8;
-		}
-
 		_putchar('0' + j);
 
 		return (j);
