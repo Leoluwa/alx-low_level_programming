@@ -3,7 +3,8 @@
 /**
  * print_sign - prints the sign of a number.
  * @s: the number to be tested.
- * Returns: 1 if s is greater than 0.
+ *
+ * Return: 1 if s is greater than 0.
  *		0 if s is 0.
  *		-1 if s is less than 0.
  */
