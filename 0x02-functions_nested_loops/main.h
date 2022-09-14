@@ -3,6 +3,8 @@
 
 int _islower(int s);
 
+int _isalpha(int s);
+
 int _putchar(char p);
 
 void print_alphabet(void);
