@@ -15,7 +15,7 @@ int main(void)
 
 	l = print_last_digit(-1024);
 
-	_putchar('0' + r);
+	_putchar('0' + l);
 
 	_putchar('\n');
 
