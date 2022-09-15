@@ -11,6 +11,8 @@ int _putchar(char p);
 
 int print_sign(int n);
 
+void jack_bauer(void);
+
 int print_last_digit(int);
 
 void print_alphabet(void);
