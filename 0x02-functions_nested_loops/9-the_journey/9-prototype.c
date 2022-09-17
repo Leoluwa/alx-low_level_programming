@@ -54,9 +54,16 @@ int main(void)
 				_putchar(' ');
 			}
 
-			if (Multiples[k][l] <= 9)
+			if (((k <= 4) && (l >= 1)) && (Multiples[k][l] < 9))
 			{
-				_putchar(' ');
+				if ((((k == 2) && (l == 4)) || ((k == 4) && (l == 2))) && (Multiples[k][l] == 8))
+				{
+					;
+				}
+				else
+				{
+					_putchar(' ');
+				}
 			}
 		}
 

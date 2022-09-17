@@ -1,15 +1,10 @@
 #include "main.h"
+#include "_putchar.c"
 
 #define	Size	10
 
-/**
- * times_table - prints the 9 times table starting with 0.
- *
- * Return: Nothing.
- *
- */
 
-void times_table(void)
+int main(void)
 {
 	int i;
 	int j;
@@ -75,4 +70,7 @@ void times_table(void)
 		_putchar('\n');
 
 	}
+
+
+	return (0);
 }
