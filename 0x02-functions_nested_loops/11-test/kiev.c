@@ -12,6 +12,8 @@
 
 void print_to_98(int v)
 {
+	int l;
+	int u;
 	int h = v;
 
 	if (h == 98)
@@ -22,29 +24,30 @@ void print_to_98(int v)
 	{
 		if (h < 98)
 		{
-			for ( ;h <= 98; h++)
+			u = h;
+			for ( ;u <= 98; u++)
 			{
-				if ((h / 10) == 0)
+				if ((u / 10) == 0)
 				{
-					_putchar(h + '0');
+					_putchar(u + '0');
 
 					_putchar(',');
 
 					_putchar(' ');
 				}
-				else if ((h / 10) != 0)
+				else if ((u / 10) != 0)
 				{
-					_putchar((h / 10) + '0');
+					_putchar((u / 10) + '0');
 
-					_putchar((h % 10) + '0');
+					_putchar((u % 10) + '0');
 
 					_putchar(',');
 
-					_putchar(' '):
+					_putchar(' ');
 				}
 			}
 
-			putchar("\n");
+			_putchar('\n');
 		}
 		else if (h > 98)
 		{
@@ -68,11 +71,11 @@ void print_to_98(int v)
 
 					_putchar(',');
 
-					_putchar(' '):
+					_putchar(' ');
 				}
 			}
 
-			putchar("\n");
+			_putchar('\n');
 		}
 	}
 }

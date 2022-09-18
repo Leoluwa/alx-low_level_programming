@@ -16,7 +16,7 @@ void print_to_98(int v)
 
 	if (h == 98)
 	{
-		;
+		printf("%d\n", h);
 	}
 	else
 	{
@@ -24,7 +24,14 @@ void print_to_98(int v)
 		{
 			for ( ;h <= 98; h++)
 			{
-				printf("%d, ", h);
+				if (h == 98)
+				{
+					printf("%d", h);
+				}
+				else
+				{
+					printf("%d, ", h);
+				}
 			}
 
 			printf("\n");
@@ -33,7 +40,14 @@ void print_to_98(int v)
 		{
 			for ( ; h >= 98; h--)
 			{
-				printf("%d, ", h);
+				if (h == 98)
+				{
+					printf("%d", h);
+				}
+				else
+				{
+					printf("%d, ", h);
+				}
 			}
 
 			printf("\n");
