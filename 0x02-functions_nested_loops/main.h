@@ -3,6 +3,8 @@
 
 int _abs(int);
 
+int add(int, int);
+
 int _islower(int s);
 
 int _isalpha(int s);
