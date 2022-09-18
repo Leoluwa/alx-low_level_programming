@@ -3,11 +3,11 @@
 
 /**
  * print_to_98 - takes an argument and prints all natural numbers
- * 		from the value of the argument to 98 in order,
- * 		followed by a new line.
+ *		from the value of the argument to 98 in order,
+ *		followed by a new line.
  *
  * @v: the to print from.
- * 
+ *
  */
 
 void print_to_98(int v)
@@ -22,7 +22,7 @@ void print_to_98(int v)
 	{
 		if (h < 98)
 		{
-			for ( ;h <= 98; h++)
+			for ( ; h <= 98; h++)
 			{
 				if (h == 98)
 				{
@@ -49,7 +49,6 @@ void print_to_98(int v)
 					printf("%d, ", h);
 				}
 			}
-
 			printf("\n");
 		}
 	}
