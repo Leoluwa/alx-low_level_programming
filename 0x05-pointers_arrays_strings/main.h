@@ -1,7 +1,11 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+void _puts(char *q);
+
 int _strlen(char *s);
+
+int _putchar(char p);
 
 void reset_to_98(int *t);
 
