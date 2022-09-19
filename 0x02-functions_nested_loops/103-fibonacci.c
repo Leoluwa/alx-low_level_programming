@@ -15,14 +15,14 @@ int main(void)
 
 	while (Sum <= 4000000)
 	{
-			Sum = (k + l);		
-			l = k;
-			k = Sum;
+		Sum = (k + l);
+		l = k;
+		k = Sum;
 
-			if ((Sum  <= 4000000) && ((Sum % 2) == 0))
-			{
-				Even += Sum;
-			}
+		if ((Sum  <= 4000000) && ((Sum % 2) == 0))
+		{
+			Even += Sum;
+		}
 	}
 	printf("%ld\n", Even);
 
