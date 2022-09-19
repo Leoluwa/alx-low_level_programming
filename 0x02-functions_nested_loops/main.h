@@ -23,5 +23,7 @@ int print_last_digit(int);
 
 void print_alphabet(void);
 
+void print_times_table(int l);
+
 void print_alphabet_x10(void);
 #endif
