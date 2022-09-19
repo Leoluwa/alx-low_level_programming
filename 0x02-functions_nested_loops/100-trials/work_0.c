@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * print_times_table - prints the times table of the given argument.
  * @u: the given argument
@@ -7,7 +8,7 @@
  *
  */
 void print_times_table(int u)
-{
+{	
 	int l;
 	int m;
 	int n;
@@ -24,27 +25,28 @@ void print_times_table(int u)
 					}
 					if (n != 0)
 					{
-						_putchar(' ');
-						_putchar(' ');
-						_putchar((l % 10) + '0');
+						printf("  %d", l);
 					}
 				}
 				else if ((l / 10) != 0)
 				{
 					if ((l / 10) > 9)
 					{
-						_putchar((l / 100) + '0');
-						_putchar(((l % 100) / 10) + '0');
-						_putchar(((l % 100) % 10) + '0');
+						printf("%d", l);
 					}
 					else
 					{
 						_putchar(' ');
 						_putchar((l / 10) + '0');
-						_putchar((l % 10) + '0'); } }
+						_putchar((l % 10) + '0');
+					}
+				}
 				if (n < u)
 				{
 					_putchar(',');
 					_putchar(' ');
-				} }
-			_putchar('\n');	} }
+				}
+			}
+			_putchar('\n');
+		}
+}
