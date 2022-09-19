@@ -13,7 +13,7 @@ void _puts(char *q)
 	char l;
 	int Counter;
 	int Count = 0;
-	
+
 	while (*(q + Count) != '\0')
 	{
 		Count++;
