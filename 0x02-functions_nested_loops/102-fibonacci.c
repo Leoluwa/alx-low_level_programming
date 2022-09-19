@@ -1,12 +1,18 @@
 #include <stdio.h>
 
+/**
+ * main - check the code.
+ *
+ * Return: Always 0.
+ *
+ */
 int main(void)
 {
 	long Sum;
 	int Count;
 	long l = 1;
 	long k = 2;
-	
+
 	for (Count = 1 ; Count <= 50; Count++)
 	{
 		if (Count <= 2)
