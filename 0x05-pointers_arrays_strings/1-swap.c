@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- * swap - takes two integer arguments and swaps their values.
- * @l, @k: int arguments whose value will be swapped.
+ * swap_int - takes two integer arguments and swaps their values.
+ * @l: int argument whose value will be swapped.
+ * @k: int argument whose value will be swapped.
  *
  * Return: Nothing.
  *
