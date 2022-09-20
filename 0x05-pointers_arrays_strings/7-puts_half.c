@@ -33,7 +33,15 @@ void puts_half(char *str)
 	for (Counter = Counted; Counter < Count; Counter++)
 	{
 		l = *(str + Counter);
-		_putchar(l);
+
+		if(l  == '\0')
+		{
+			;
+		}
+		else
+		{
+			_putchar(l);
+		}
 	}
 
 	_putchar('\n');
