@@ -15,5 +15,7 @@ void rev_string(char *v);
 
 void reset_to_98(int *t);
 
+void puts_half(char *str);
+
 void swap_int(int *l, int *k);
 #endif
