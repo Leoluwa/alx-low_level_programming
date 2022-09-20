@@ -24,11 +24,11 @@ void puts_half(char *str)
 	{
 		Counted = (Count / 2);
 	}
-	if (*(str + Counted) == 'H')
+	if (*(str + 0) == 'H')
 	{
 		Counter = Counted;
 	}
-	if (*(str + Counted) != 'H')
+	if (*(str + 0) != 'H')
 	{
 		Counter = (Counted + 1);
 	}
