@@ -12,13 +12,11 @@
 
 void puts2(char *str)
 {
-	int Count = 0;
+	int Count;
 
-	while (*(str + Count) != '\0')
+	for (Count = 0; (*(str + Count) != '\0'); Count += 2)
 	{
 		printf("%c", *(str + Count));
-
-		Count += 2;
 	}
 
 	printf("\n");
