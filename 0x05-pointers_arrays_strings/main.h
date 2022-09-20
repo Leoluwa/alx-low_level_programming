@@ -1,6 +1,9 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+
+int _atoi(char *s);
+
 void _puts(char *q);
 
 int _strlen(char *s);
