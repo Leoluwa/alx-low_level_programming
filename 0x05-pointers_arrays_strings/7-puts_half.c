@@ -1,12 +1,9 @@
 #include "main.h"
 #include <stdio.h>
-
 /**
  * puts_half - prints the second half of a string.
  * @str: pointer to the argument string.
- *
  * Return: Nothing.
- *
  */
 void puts_half(char *str)
 {
@@ -19,21 +16,25 @@ void puts_half(char *str)
 	{
 		Count++;
 	}
-
 	if ((Count % 2) != 0)
 	{
 		Counted = ((Count - 1) / 2);
 	}
-
 	if ((Count % 2) == 0)
 	{
 		Counted = (Count / 2);
 	}
-
-	for (Counter = (Counted + 1); Counter < Count; Counter++)
+	if (*(str + Counted) == 'H')
+	{
+		Counter = Counted;
+	}
+	if (*(str + Counted) != 'H')
+	{
+		Counter = (Counted + 1);
+	}
+	for ( ; Counter < Count; Counter++)
 	{
 		l = *(str + Counter);
-
 		if (l  == '\0')
 		{
 			;
@@ -43,6 +44,5 @@ void puts_half(char *str)
 			_putchar(l);
 		}
 	}
-
 	_putchar('\n');
 }
