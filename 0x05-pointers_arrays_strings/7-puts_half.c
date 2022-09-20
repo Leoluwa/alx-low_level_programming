@@ -30,7 +30,7 @@ void puts_half(char *str)
 		Counted = (Count / 2);
 	}
 
-	for (Counter = Counted; Counter < Count; Counter++)
+	for (Counter = (Counted + 1); Counter < Count; Counter++)
 	{
 		l = *(str + Counter);
 
