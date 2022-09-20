@@ -20,4 +20,6 @@ void puts_half(char *str);
 void swap_int(int *l, int *k);
 
 void print_array(int *a, int n);
+
+char *_strcpy(char *dest, char *src);
 #endif
