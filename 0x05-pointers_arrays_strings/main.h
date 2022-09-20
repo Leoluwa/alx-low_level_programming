@@ -18,4 +18,6 @@ void reset_to_98(int *t);
 void puts_half(char *str);
 
 void swap_int(int *l, int *k);
+
+void print_array(int *a, int n);
 #endif
