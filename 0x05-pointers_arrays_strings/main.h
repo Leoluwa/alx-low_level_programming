@@ -7,6 +7,8 @@ int _strlen(char *s);
 
 int _putchar(char p);
 
+void puts2(char *str);
+
 void print_rev(char *r);
 
 void rev_string(char *v);
