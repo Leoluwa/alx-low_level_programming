@@ -1,6 +1,12 @@
 #include "main.h"
 #include <stdlib.h>
 
+/**
+ * rev_string - reverses strings.
+ * @arr: - pointer to the string to be reversed.
+ *
+ * Return: Nothing.
+ */
 void  rev_string(char *arr)
 {
 	int Counter;
