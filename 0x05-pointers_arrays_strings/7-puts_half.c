@@ -34,7 +34,7 @@ void puts_half(char *str)
 	{
 		l = *(str + Counter);
 
-		if(l  == '\0')
+		if (l  == '\0')
 		{
 			;
 		}
