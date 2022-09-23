@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * _strcat - concatenates n bytes from src with dest.
+ * _strncat - concatenates n bytes from src with dest.
  * @n: number of characers to use from src.
  * @src: pointer to the string to be attached to dest.
  * @dest: pointer to the string that another one will be attched to.
