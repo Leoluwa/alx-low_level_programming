@@ -18,7 +18,7 @@ char *_strncat(char *dest, char *src, int n)
 	short Counter = 0;
 	short Counting = 0;
 
-	while (Count < n)
+	while ((Count < n) && (*(src + Count) != '\0'))
 	{
 		Count++;
 	}
