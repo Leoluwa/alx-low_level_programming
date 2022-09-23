@@ -9,11 +9,12 @@
 
 char *string_toupper(char *l)
 {
+	char *r;
 	int letter;
 	int Counter;
 	int lower[26];
 	int upper[26];
-	int Count;
+	int Count = 0;
 	int Counting = 0;
 
 	while (*(l + Counting) != '\0')
@@ -31,9 +32,7 @@ char *string_toupper(char *l)
 		upper[Count] = letter;
 	}
 
-	Count = 0;
-
-	while (((*(l + Count) >= 65) || (*(l + Count) <= 90)) && (Count < Counting))
+	for ( ; ((*(l + Count) >= 65) || (*(l + Count) <= 90)) && (Count < Counting); Count++)
 	{
 		for (Counter = 0; Counter < 26; Counter++)
 		{
@@ -42,10 +41,9 @@ char *string_toupper(char *l)
 				*(l + Count) = upper[Counter];
 			}
 		}
-
-		Count++;
 	}
 
+	r = l;
 
-	return (l);
+	return (r);
 }
