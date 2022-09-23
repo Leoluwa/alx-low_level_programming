@@ -9,10 +9,9 @@
  * Return: an integer.
  */
 
-int  *_strcmp(char *dest, char *src)
+int  _strcmp(char *dest, char *src)
 {
-	short Count;
-	short Counter;
+	short Count = 0;
 	short Counting = 0;
 
 	while  (*(dest + Count) != '\0')
