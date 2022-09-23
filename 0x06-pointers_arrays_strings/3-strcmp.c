@@ -1,10 +1,9 @@
 #include "main.h"
-#include <stdlib.h>
 
 /**
  * _strcmp - compares two strings.
- * @src: pointer to the string to be attached to dest.
- * @dest: pointer to the string that another one will be attched to.
+ * @src: pointer to the first string.
+ * @dest: pointer to the second string.
  *
  * Return: an integer.
  */
