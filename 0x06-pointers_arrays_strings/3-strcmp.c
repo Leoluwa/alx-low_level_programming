@@ -28,7 +28,7 @@ int  _strcmp(char *dest, char *src)
 	{
 		return (-15);
 	}
-	else if(Count > Counting)
+	else if (Count > Counting)
 	{
 		return (15);
 	}
