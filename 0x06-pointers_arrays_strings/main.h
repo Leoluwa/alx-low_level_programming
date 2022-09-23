@@ -1,8 +1,10 @@
 #ifndef	MAIN_H
 #define	MAIN_H
 
-int _strcmp(char *s1, char *s2);
 
+char *string_toupper(char *l);
+
+int _strcmp(char *s1, char *s2);
 
 void reverse_array(int *a, int n);
 
