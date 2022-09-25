@@ -40,9 +40,6 @@ char *cap_string(char *str)
 			{
 				for (k = 0; k < 26; k++)
 				{
-					if (*(str + u) == *(Separator + 0))
-					{
-						*(str + u) = ' '; }
 					if (*(str + (u + 1)) == lower[k])
 					{
 						*(str + (u + 1)) = upper[k];
