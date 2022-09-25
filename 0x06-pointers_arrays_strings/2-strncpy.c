@@ -1,40 +1,37 @@
 #include "main.h"
-#include <stdlib.h>
 
 /**
- * _strcmp - compares two strings.
- * @src: pointer to the string to be attached to dest.
- * @dest: pointer to the string that another one will be attched to.
+ * _strncpy - Copies n bytes from a string
+ * @src: The string to copy from
+ * @dest: The location to copy
+ * @n: Number of bytes to copy
  *
- * Return: an integer.
+ * Return: Pointer to dest
+ *
  */
 
-int  *_strcmp(char *dest, char *src)
+char *_strncpy(char *dest, char *src, int n)
 {
-	short Count;
-	short Counter;
-	short Counting = 0;
+	int i = 0;
+	int u = 0;
 
-	while  (*(dest + Count) != '\0')
+	for (i = 0; i < n; i++)
 	{
-		Count++;
-	}
-
-	while (*(src + Counting) != '\0')
-	{
-		Counting++;
+		*(dest + i) = *(src + i);
 	}
 
-	if (Count < Counting)
+	while (*(dest + u) != '\0')
 	{
-		return (-15);
+		u++;
 	}
-	else if(Count > Counting)
+
+	while (u < 98)
 	{
-		return (15);
+		*(dest + u) = '\0';
+
+		u++;
 	}
-	else
-	{
-		return (0);
-	}
+
+
+	return (dest);
 }
