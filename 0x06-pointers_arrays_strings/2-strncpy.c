@@ -12,24 +12,41 @@
 
 char *_strncpy(char *dest, char *src, int n)
 {
+	int l = 0;
 	int i = 0;
-	int u = 0;
 
-	for (i = 0; i < n; i++)
+	while (*(src + l) != '\0')
 	{
-		*(dest + i) = *(src + i);
+		l++;
 	}
 
-	while (*(dest + u) != '\0')
+
+
+	if (l < n)
 	{
-		u++;
+		for (i = 0; i < l; i++)
+		{
+			*(dest + i) = *(src + i);
+		}
+
+		for ( ; l < 90; l++)
+		{
+			*(dest + l) = '\0';
+		}
+
+		for ( ; l < 97; l++)
+		{
+			*(dest + l) = '*';
+		}
+
+		*(dest + (n - 1)) = '\0';
 	}
-
-	while (u < 98)
+	else
 	{
-		*(dest + u) = '\0';
-
-		u++;
+		for (i = 0; i < n; i++)
+		{
+			*(dest + i) = *(src + i);
+		}
 	}
 
 
