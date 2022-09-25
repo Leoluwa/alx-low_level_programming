@@ -2,6 +2,8 @@
 #define	MAIN_H
 
 
+char *cap_string(char *);
+
 char *string_toupper(char *l);
 
 int _strcmp(char *s1, char *s2);
