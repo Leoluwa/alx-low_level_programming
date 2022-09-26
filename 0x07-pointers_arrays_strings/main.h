@@ -1,7 +1,12 @@
 #ifndef	MAIN_H
 #define	MAIN_H
 
+
+int _putchar(char p);
+
 char *_strchr(char *s, char c);
+
+void print_chessboard(char (*a)[8]);
 
 char *_strpbrk(char *s, char *accept);
 
