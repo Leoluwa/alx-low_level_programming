@@ -12,8 +12,16 @@
 char *_strchr(char *s, char c)
 {
 	int l;
+	int u;
 
-	for (l = 0; (*(s + l) != '\0'); l++)
+	u = 0;
+
+	while (*(s + u) != '\0')
+	{
+		u++;
+	}
+
+	for (l = 0; l < u; l++)
 	{
 		if (*(s + l) == c)
 		{
