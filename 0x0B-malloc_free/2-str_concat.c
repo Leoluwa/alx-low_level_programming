@@ -34,14 +34,15 @@ char *str_concat(char *s1, char *s2)
 	ptr = (char *)malloc(((l + u) + 1) * sizeof(char));
 	if (ptr == NULL)
 	{
-		return (NULL); }
-	else
+		return (NULL); 
+	}
+
+	for (m = 0; m < l; m++)
 	{
-		for (m = 0; m < l; m++)
-		{
-			*(ptr + m) = *(s1 + m);	}
-		for (e = 0; m < (l + u); e++, m++)
-		{
-			*(ptr + m) = *(s2 + e);	} }
+		*(ptr + m) = *(s1 + m);	}
+	for (e = 0; m < (l + u); e++, m++)
+	{
+		*(ptr + m) = *(s2 + e);
+	}
 	return (ptr);
 }
