@@ -20,7 +20,7 @@ int factorial(int n)
 		return (-1);
 	}
 
-	if((n - 1) > 0)
+	if ((n - 1) > 0)
 	{
 		return (n * factorial(n - 1));
 	}
