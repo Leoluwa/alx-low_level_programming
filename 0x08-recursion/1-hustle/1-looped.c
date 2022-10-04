@@ -10,17 +10,15 @@
 
 void _print_rev_recursion(char *s)
 {
-	char l;
+	int l = 0, u = 0;
 
-	if (*s)
-	{
-		l = *(++s);
-		_print_rev_recursion(s);
-	}
+	while (s[l])
+		l++;
 
-	if (l)
+	while (l >= u)
 	{
-		l = *(s);
-		_putchar(l);
+		_putchar(s[l]);
+
+		l--;
 	}
 }
